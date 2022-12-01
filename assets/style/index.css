@@ -1,0 +1,70 @@
+@import './reset.css';
+
+
+.body {
+    background-color: #1e0555;
+    width: 100%;
+    height: 100%;
+}
+
+.timer {
+    text-align: left;
+    margin-left: 12px;
+
+}
+
+h4 {
+    color: #fff;
+}
+
+p {
+    border-radius: 10px;
+    color: #fff;
+}
+
+.score {
+    text-align: right;
+    margin-right: 12px;
+}
+
+.game {
+    background-color: #f0db4f;
+    margin: auto;
+    width:45%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.text {
+    font-size: 25px;
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    color: #fff;
+    height: 50px;
+    width: 250px;
+}
+
+
+.btn {
+    font-size: 25px;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    color: #fff;
+    margin-top: 10px;
+    height: 40px;
+    width: 70px;
+}
