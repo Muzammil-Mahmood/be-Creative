@@ -59,4 +59,49 @@ class Score {
 export { Score };
 
 
-const timer = select('.timer')
+const watch = select('.watch');
+const second = select('.second');
+const score = select('.score');
+const points = select('.points');
+const game = select('.game');
+const sample = select('.sample');
+const text = select('.text');
+const btn = select('.btn');
+
+const energetic = new Audio('./assets/media/audio/music.m4a');
+energetic.type = 'audio/m4a';
+
+
+const data = ['dinosaur', 'love', 'pineapple', 'calendar', 'robot', 'building', 'population', 
+'weather', 'bottle', 'history', 'dream', 'character', 'money', 'absolute', 
+'discipline', 'machine', 'accurate', 'connection', 'rainbow', 'bicycle', 
+'eclipse', 'calculator', 'trouble', 'watermelon', 'developer', 'philosophy', 
+'database', 'periodic', 'capitalism', 'abominable', 'component', 'future', 
+'pasta', 'microwave', 'jungle', 'wallet', 'canada', 'coffee', 'beauty', 'agency', 
+'chocolate', 'eleven', 'technology', 'alphabet', 'knowledge', 'magician', 
+'professor', 'triangle', 'earthquake', 'baseball', 'beyond', 'evolution', 
+'banana', 'perfumer', 'computer', 'management', 'discovery', 'ambition', 'music', 
+'eagle', 'crown', 'chess', 'laptop', 'bedroom', 'delivery', 'enemy', 'button',
+'superman', 'library', 'unboxing', 'bookstore', 'language', 'homework', 
+'fantastic', 'economy', 'interview', 'awesome', 'challenge', 'science', 'mystery', 
+'famous', 'league', 'memory', 'leather', 'planet', 'software', 'update', 'yellow', 
+'keyboard', 'window'];
+
+
+
+function timer(){
+  let sec = 30;
+  let timer = setInterval(function(){
+      document.getElementsByClassName('second').innerHTML='00:'+sec;
+      sec--;
+      if (sec < 0) {
+          clearInterval(timer);
+      }
+  }, 1000);
+}
+
+window.onload = function () {
+  let time = 60 / 2, // your time in seconds here
+      display = document.querySelector('#second');
+  startTimer(time, display);
+};
